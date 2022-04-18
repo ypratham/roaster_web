@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+.lyt_wrapper_notes {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15vw 25vw 1fr;
+      grid-template-columns: 15vw 25vw 1fr;
+}
+
+.lyt_wrapper_notes .wrapper_notes_navBar {
+  background: #134074;
+  padding: 20px;
+  font-family: "Quicksand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.lyt_wrapper_notes .wrapper_notes_navBar .notes_navBar_title {
+  width: 100%;
+  font-size: 2.5vw;
+  font-family: "Dancing Script";
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#c996cc), to(#916bbf));
+  background: linear-gradient(90deg, #c996cc 0%, #916bbf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lyt_wrapper_notes .wrapper_notes_navBar .notes_navBar_list {
+  list-style: none;
+  margin: 0;
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2vh;
+  width: 100%;
+}
+
+.lyt_wrapper_notes .wrapper_notes_navBar .notes_navBar_list .navBar_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.lyt_wrapper_notes .wrapper_notes_navBar .notes_navBar_list .navBar_list_item:hover {
+  background: #13325d;
+}
+
+.lyt_wrapper_notes .wrapper_notes_navBar .notes_navBar_list .navBar_list_item .list_item_text {
+  font-size: 1.1vw;
+  font-weight: 400;
+  color: #eeeeee;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList {
+  background: #8da9c4;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_title {
+  font-family: "Open Sans";
+  color: #134074;
+  font-weight: 400;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #eef4ed;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_form .noteList_form_searchFelid {
+  color: #134074;
+  font-weight: 400;
+  font-size: 1vw;
+  background: transparent;
+  width: 100%;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_form .noteList_form_searchBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_notesList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  list-style: none;
+  margin-left: 0;
+  height: 71vh;
+  overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  margin-top: 20px;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_notesList::-webkit-scrollbar {
+  display: none;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_notesList .noteList_notesList_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  border-radius: 5px;
+  color: #eeeeee;
+  background: #13325d;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in;
+  transition: -webkit-box-shadow 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
+  font-family: "Open Sans";
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_notesList .noteList_notesList_item:hover {
+  -webkit-box-shadow: 0px 0px 30px -2px #134074;
+          box-shadow: 0px 0px 30px -2px #134074;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_notesList .noteList_notesList_item .notesList_item_title {
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteList .notes_noteList_notesList .noteList_notesList_item .notesList_item_content {
+  font-weight: 400;
+  font-size: 0.9vw;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteArea {
+  background: #13325d;
+  padding: 20px;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteArea .notes_noteArea_noteContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  color: #eeeeee;
+}
+
+.lyt_wrapper_notes .wrapper_notes_noteArea .notes_noteArea_noteContent .noteArea_noteContent_title {
+  color: #eeeeee;
+  background: transparent;
+  font-weight: 600;
+  font-size: 1.5vw;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+code {
+  font-size: 1.1vw;
+  color: #eeeeee;
+  background: #134074;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 0;
+  line-height: 10px;
+}
+
+blockquote {
+  background: rgba(19, 64, 116, 0.5);
+  border-left: 10px solid #134074;
+  margin-left: 0;
+  margin: 1.5em 10px;
+  margin-left: 0;
+  padding: 0.5em 10px;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 3vw;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.editor {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  height: 70vh;
+  overflow-y: scroll;
+  word-break: break-word;
+  font-size: 1.2vw;
+  font-family: "Open Sans";
+  color: #eeeeee;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #134074;
+}
+
+.editor::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=global.css.map */

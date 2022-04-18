@@ -1,0 +1,149 @@
+.lyt_wrapper_notes {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15vw 25vw 1fr;
+
+    // Notes navigation
+    .wrapper_notes_navBar {
+        background: $navBgColor;
+        padding: 20px;
+
+        font-family: $font;
+        @include flex(column, flex-start, flex-start);
+
+        .notes_navBar_title {
+            width: 100%;
+            font-size: 2.5vw;
+            font-family: $titleFont;
+            text-align: center;
+            background: linear-gradient(90deg, #c996cc 0%, #916bbf 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .notes_navBar_list {
+            list-style: none;
+            margin: 0;
+            margin-top: 5vh;
+            @include flex(column, flex-start, flex-start);
+            gap: 2vh;
+            width: 100%;
+            .navBar_list_item {
+                @include flex(row, flex-start, center);
+                gap: 10px;
+                padding: 15px 10px;
+                border-radius: 5px;
+                width: 100%;
+                cursor: pointer;
+                &:hover {
+                    background: $notesAreaBgColor;
+                }
+
+                .list_item_text {
+                    font-size: 1.1vw;
+                    font-weight: $fontReg;
+                    color: $textColorPrimary;
+                }
+            }
+        }
+    }
+
+    // List of notes
+    .wrapper_notes_noteList {
+        background: $notesNavBgColor;
+        padding: 25px;
+
+        @include flex(column, flex-start, flex-start);
+        gap: 20px;
+
+        .notes_noteList_title {
+            font-family: $noteFont;
+            color: $textColorSecondary;
+            font-weight: $fontReg;
+        }
+
+        .notes_noteList_form {
+            @include flex(row, space-between, center);
+            background: #eef4ed;
+            border-radius: 5px;
+            padding: 10px 15px;
+            width: 100%;
+
+            .noteList_form_searchFelid {
+                color: $textColorSecondary;
+                font-weight: $fontReg;
+                font-size: 1vw;
+                background: transparent;
+                width: 100%;
+            }
+
+            .noteList_form_searchBtn {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .notes_noteList_notesList {
+            width: 100%;
+            @include flex(column, flex-start, flex-start);
+            gap: 20px;
+            list-style: none;
+            margin-left: 0;
+            height: 71vh;
+            overflow-y: scroll;
+            @include hideScrollbar();
+
+            margin-top: 20px;
+
+            .noteList_notesList_item {
+                @include flex(column, flex-start, flex-start);
+                gap: 10px;
+                border-radius: 5px;
+                color: $textColorPrimary;
+                background: $notesAreaBgColor;
+                width: 100%;
+                padding: 20px;
+                cursor: pointer;
+                transition: box-shadow 0.3s ease-in;
+
+                &:hover {
+                    box-shadow: 0px 0px 30px -2px $navBgColor;
+                }
+
+                font-family: $noteFont;
+                .notesList_item_title {
+                    font-weight: $fontReg;
+                    font-size: 1vw;
+                }
+                .notesList_item_content {
+                    font-weight: $fontReg;
+                    font-size: 0.9vw;
+                }
+            }
+        }
+    }
+
+    // Note area
+    .wrapper_notes_noteArea {
+        background: $notesAreaBgColor;
+
+        padding: 20px;
+
+        .notes_noteArea_noteContent {
+            width: 100%;
+            @include flex(column, flex-start, flex-start);
+            gap: 20px;
+            color: $textColorPrimary;
+            .noteArea_noteContent_title {
+                color: $textColorPrimary;
+                background: transparent;
+                font-weight: $fontBold;
+                font-size: 1.5vw;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@import "./config/variables";
+@import "./config/_mixins";
+@import "./layout/lyt_notes";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: $font;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+code {
+    font-size: 1.1vw;
+    color: $textColorPrimary;
+    background: $navBgColor;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 0;
+    line-height: 10px;
+}
+
+blockquote {
+    background: $navBgColorLowOpacity;
+    border-left: 10px solid $navBgColor;
+    margin-left: 0;
+    margin: 1.5em 10px;
+    margin-left: 0;
+    padding: 0.5em 10px;
+}
+blockquote:before {
+    content: open-quote;
+    font-size: 3vw;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.editor {
+    @include hideScrollbar();
+    height: 70vh;
+    overflow-y: scroll;
+    word-break: break-word;
+    font-size: 1.2vw;
+    font-family: $noteFont;
+    color: $textColorPrimary;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $navBgColor;
+}
